@@ -50,17 +50,5 @@ Custom-ReAct-Engine/
 └── README.md            # Complete project documentation & Viva preparation guide
 ```
 
-### 📄 Har File Ka Kaam (File Responsibilities)
-
-| File | Kaam (Role) | Description |
-| :--- | :--- | :--- |
-| **`main.py`** | **Program Run Karna** | Interactive console interface, menu options (1–6), CLI flags (`--test`, `--query`), and color-coded execution logs. |
-| **`tools.py`** | **Calculator Aur API Tools** | Contains `CalculatorTool` (safe AST evaluation without unsafe `eval`) and `CountryAPITool` (REST Countries API consumer with offline fallback database). |
-| **`reflection.py`** | **Errors Detect Aur Recover Karna** | Inspects tool observations, detects syntax errors, zero division, 404 not found, or network timeouts, and suggests corrective retries. |
-| **`agent.py`** | **ReAct Control Loop** | Core loop coordinating Thought $\to$ Action $\to$ Observation $\to$ Reflection $\to$ Final Answer, tracking trajectories and preventing infinite loops. |
-| **`requirements.txt`** | **Dependencies** | Python external packages (`requests`, `colorama`). |
-
----
-
 ## 📜 License
 This project is open-source and created for educational and practical agentic AI engineering.
